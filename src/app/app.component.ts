@@ -19,7 +19,8 @@ export class AppComponent implements AfterViewInit {
 
   data: DynamicItem[] = [
     new DynamicItem(Dynamic1Component, {title: 'Title1'}),
-    new DynamicItem(Dynamic2Component, {title: 'Hello World'})
+    new DynamicItem(Dynamic2Component, {title: 'Hello World'}),
+    new DynamicItem(Dynamic2Component, {title: 'New Title'})
   ]
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver){
