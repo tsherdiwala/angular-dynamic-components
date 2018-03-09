@@ -2,11 +2,12 @@ import { Component, Input } from '@angular/core';
 import { TemplateComponent } from './template.component';
 
 @Component({
-    selector: 'dynamic1',
     template: `
-         {{data || ''}}
+        <i>
+            {{data}}
+        </i>
     `
 })
-export class Dynamic1Component implements TemplateComponent{
+export class ItalicTextComponent implements TemplateComponent{
     @Input() data : any;
 }
